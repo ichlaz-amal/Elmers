@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Elmers</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="title_activity_staff">StaffActivity</string>
+    <string name="title_activity_patient">PatientActivity</string>
+
+    <string name="manager_tab_1">Staff</string>
+    <string name="manager_tab_2">Record</string>
+    <string name="manager_tab_3">Profile</string>
+
+    <string name="staff_tab_1">Record</string>
+    <string name="staff_tab_2">List</string>
+    <string name="staff_tab_3">Profile</string>
+
+    <string name="patient_tab_1">Record</string>
+    <string name="patient_tab_2">List</string>
+    <string name="patient_tab_3">Profile</string>
+
+    <string name="web_client_id">588986221844-sjgppkgtbeu4mrdlb7httqe5r0fuo24t.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">1506156392867333</string>
+    <string name="fb_login_protocol_scheme">fb1506156392867333</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

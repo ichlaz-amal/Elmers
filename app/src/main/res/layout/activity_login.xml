@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/signInForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:src="@drawable/logo_03"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sign In !"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/signInEmail"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/signInPassword"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/signIn"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorBody"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            tools:ignore="HardcodedText" />
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/goSignUp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up here"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/googleSignIn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/sign_google"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/facebookSignIn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/sign_facebook"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signUpForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up !"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/signUpName"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/signUpEmail"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/signUpPassword"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/signUpConfirm"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/signUp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorBody"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/goSignIn"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in here"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/googleSignUp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/sign_google"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/facebookSignUp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/sign_facebook"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

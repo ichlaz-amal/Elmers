@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".Staff.RecognitionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:text="Get Result"
+                    tools:ignore="HardcodedText" />
+                <EditText
+                    android:id="@+id/patient_name"
+                    android:background="@drawable/bg_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Patient Name"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:weightSum="7.0"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:background="@drawable/bg_edit_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5.0"
+                            android:layout_marginEnd="8dp"
+                            android:hint="Value"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            tools:ignore="HardcodedText" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_failed"
+                            tools:ignore="ContentDescription" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_camera"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_record"
+                android:background="@drawable/bg_button"
+                android:textColor="@color/colorBody"
+                android:textSize="16sp"
+                android:layout_marginTop="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Record"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

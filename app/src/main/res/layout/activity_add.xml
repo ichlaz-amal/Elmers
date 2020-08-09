@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".Staff.AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="Add a Record Model !"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/record_name"
+                android:background="@drawable/bg_edit_text"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Record name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="Record field :"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:background="@drawable/bg_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5.0"
+                    android:layout_marginEnd="8dp"
+                    android:hint="Field name"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText" />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_add" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_model"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorBody"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Record Model"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</ScrollView>
